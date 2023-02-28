@@ -133,7 +133,7 @@ const expiry = [12,10,3,9,6,4]
 let newData = []
 setInterval(function() { 
     const utcTime = new Date()
-    if(utcTime.getUTCHours()===9 && utcTime.getUTCMinutes()===51 && utcTime.getUTCSeconds()===00){
+    if(utcTime.getUTCHours()===0 && utcTime.getUTCMinutes()===0 && utcTime.getUTCSeconds()===0){
         newData = data.map((eachItem)=>{
             const rndmHour = hours[Math.floor(Math.random()*8)]
             let rndmExpiry = 24
